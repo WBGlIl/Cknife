@@ -21,6 +21,8 @@ public class Common {
 	public static HashMap<String, String> map = new HashMap<String, String>();
 
 	public static String purData(String data) {
+		data = data.replace("&gt;", ">");
+		data = data.replace("&lt;", "<");
 		String datas = data;
 		String regex = Common.purRegex(Safe.SPL) + "(.*)"
 				+ Common.purRegex(Safe.SPR);
