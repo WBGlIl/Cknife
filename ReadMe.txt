@@ -1,9 +1,9 @@
 软件名称：Cknife
 中文名称：C刀
-源码地址：https://github.com/Chora10/Cknife
-下载地址：http://pan.baidu.com/s/1nul1mpr  密码：f65g
+源码地址：https://github.com/ninetysec/Cknife
+下载地址：https://pan.baidu.com/s/1ec0l4a  密码：xhng
 官方博客：http://www.ms509.com/
-作者：	  Chora && MelodyZX
+作者：	  Chora && MelodyZX && Scar1et
 ----------------------------------------------------------------------------------------------------------
 免责声明：
 本工具仅限于安全研究与教学使用，用户使用本工具所造成的所有后果，由用户承担全部法律及连带责任！作者不承担任何法律及连带责任。
@@ -99,7 +99,7 @@ PHP_NEWDICT=...        			       新建目录功能的代码放这儿
 PHP_UPLOAD=...          		       上传文件功能的代码放这儿
 PHP_DOWNLOAD=...    			       下载文件功能的代码放这儿
 PHP_SHELL=...              		       虚拟终端功能的代码放这儿
-PHP_DB_MYSQL=...			       管理MYSQL数据库功能的代码放这儿
+PHP_DB_MYSQL=...			           管理MYSQL数据库功能的代码放这儿
 ASP_...=...
 ASPX_...=...
 JSP_...=...
