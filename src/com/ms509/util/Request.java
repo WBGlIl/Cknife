@@ -69,8 +69,8 @@ public class Request {
 			if (Safe.REQUEST_STATUS.equals("1")) {
 				Common.RequestHeader(huc);
 			}
-			huc.setConnectTimeout(10000);
-			huc.setReadTimeout(10000);
+			huc.setConnectTimeout(60000);	// 1min，否则执行 systeminfo 将超时报错
+			huc.setReadTimeout(60000);
 			huc.setDoOutput(true);
 			PrintWriter out = new PrintWriter(huc.getOutputStream());
 			out.write(param);
@@ -104,6 +104,7 @@ public class Request {
 			}
 			data = head + System.lineSeparator() + data;
 		} catch (Exception e) {
+			System.out.println(e);
 			data = e.getMessage();
 		}
 		return data;

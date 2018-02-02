@@ -112,23 +112,23 @@ public class SetDBDialog extends JDialog {
 		//System.out.println(type);
 		switch (type) {
 		case "JSP(Eval)":
-			dbtypes = new String[] { "<T>MYSQL</T><H>localhost</H><U>root</U><P>root</P><L>utf8</L>",
-					"<T>ORACLE</T><H>localhost:1521</H><U>root</U><P>root</P><M>database</M><L>utf8</L>",
-					"<T>MSSQL</T><H>localhost:1433</H><U>root</U><P>root</P><M>database</M><L>utf8</L>" };
+			dbtypes = new String[] { "<T>MYSQL</T><H>127.0.0.1</H><U>root</U><P>root</P><L>utf8</L>",
+					"<T>ORACLE</T><H>127.0.0.1:1521</H><U>root</U><P>root</P><M>database</M><L>utf8</L>",
+					"<T>MSSQL</T><H>127.0.0.1:1433</H><U>root</U><P>root</P><M>database</M><L>utf8</L>" };
 			break;
 		case "PHP(Eval)":
-			dbtypes = new String[] { "<T>MYSQL</T><H>localhost</H><U>root</U><P>root</P><L>utf8</L>" };
+			dbtypes = new String[] { "<T>MYSQL</T><H>127.0.0.1</H><U>root</U><P>root</P><L>utf8</L>" };
 			break;
 		case "ASP(Eval)":
 			dbtypes = new String[] {
-					"<T>MYSQL</T><C>Driver=MySQL ODBC 5.3 Unicode Driver;Server=localhost;database=mysql;UID=root;PWD=root</C>",
+					"<T>MYSQL</T><C>Driver=MySQL ODBC 5.3 Unicode Driver;Server=127.0.0.1;database=mysql;UID=root;PWD=root</C>",
 					"<T>MSSQL</T><C>Provider=SQLOLEDB.1;User ID=;Password=;Initial Catalog=master;Data Source=(local)</C>",
 					"<T>MSSQL</T><C>Driver={Sql Server};Server=(local);Database=master;Uid=sa;Pwd=</C>",
 					"<T>MDB</T><C>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\111.mdb</C>" };
 			break;
 		case "ASPX(Eval)":
 			dbtypes = new String[] {
-					"<T>MYSQL</T><C>Driver=MySQL ODBC 5.3 Unicode Driver;Server=localhost;database=mysql;UID=root;PWD=root</C>",
+					"<T>MYSQL</T><C>Driver=MySQL ODBC 5.3 Unicode Driver;Server=127.0.0.1;database=mysql;UID=root;PWD=root</C>",
 					"<T>MSSQL</T><C>Provider=SQLOLEDB.1;User ID=;Password=;Initial Catalog=master;Data Source=(local)</C>",
 					"<T>MSSQL</T><C>Driver={Sql Server};Server=(local);Database=master;Uid=sa;Pwd=</C>",		
 					"<T>MDB</T><C>Provider=Microsoft.Jet.OLEDB.4.0;Data Source=C:\\111.mdb</C>" };

@@ -193,6 +193,7 @@ public class Shell {
 		String[] index_datas = Common.send(url, params, code).split("\t");
 		String result = null;
 		result = Arrays.toString(index_datas);
+		//System.out.println(index_datas);
 		re[0] = result.substring(result.indexOf("[") + 1, result.indexOf("[S]"));
 		re[1] = Arrays.toString(index_datas).substring(Arrays.toString(index_datas).indexOf("[S]") + 3,
 				Arrays.toString(index_datas).indexOf("[E]"));

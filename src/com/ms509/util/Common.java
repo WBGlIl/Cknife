@@ -23,6 +23,8 @@ public class Common {
 	public static String purData(String data) {
 		data = data.replace("&gt;", ">");
 		data = data.replace("&lt;", "<");
+		data = data.replace("&quot;", "\"");
+		// System.out.println(data);
 		String datas = data;
 		String regex = Common.purRegex(Safe.SPL) + "(.*)"
 				+ Common.purRegex(Safe.SPR);
@@ -40,7 +42,6 @@ public class Common {
 	}
 
 	public static String send(String url, String params, String code) {
-		// System.out.println(Request.doPost(url, params, code));
 		return Common.purData(Request.doPost(url, params, code));
 	}
 
